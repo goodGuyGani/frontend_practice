@@ -5,36 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Harzhedzmi Gani</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="landing.css" />
+    <script src="js/gsap.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.typekit.net/qsy7khk.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
   </head>
-  <body>
     <div class="website-content">
-      <div class="navbar">
-        <div class="logo">Chiara <br />Luzzana</div>
-        <div class="menu-icon">Menu</div>
-      </div>
-      <!--<div class="site-header">
-        <div class="row">
-          <div class="header-row"><span>the</span>purity</div>
-          <div class="header-row-wrapper"></div>
+      <main>
+        
+        <div class="intro"> 
+          <h1 class="intro__title"> 
+            <span class="intro__title-pre">Harzhedzmi Gani</span> 
+            <span class="intro__title-sub">I am a <a href="https://codepen.io/supah/pen/poxmKPQ">Web</a> Developer</span> 
+          </h1> 
+          <span class="intro__info">Scroll moderately to fully experience the animations</span> 
         </div>
-        <div class="row">
-          <div class="header-row"><span>of</span>noise</div>
-          <div class="header-row wrapper"></div>
+        <div class="content-wrap">
+          <div class="content">
+            <div class="title-wrap">
+              <span class="title title--up">About</span>
+              <span class="title title--down">Me</span>
+            </div>
+          </div>
+          <div class="content content--layout content--layout-1">
+            <svg class="content__img content__img--1" width="896" height="1344" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 896 1344">
+              <defs>
+                <filter id="displacementFilter">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise" />
+                  <feDisplacementMap in="SourceGraphic" in2="noise" scale="50" xChannelSelector="R" yChannelSelector="G" />
+                </filter>
+                <mask id="circleMask">
+                  <circle cx="50%" cy="50%" r="0" data-value-final="820" fill="white" class="mask" style="filter: url(#displacementFilter);" />
+                </mask>
+              </defs>
+              <image xlink:href="https://scontent.fdvo1-1.fna.fbcdn.net/v/t39.30808-6/347822848_742926704282886_3634595552592710349_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=zm1NVNrn40gAX-GrgMv&_nc_ht=scontent.fdvo1-1.fna&oh=00_AfAkghyXuOkwzHH4e7LgwWYKKScBgZB8tgls311P2CIPUg&oe=6555BD2F" width="896" height="1344" mask="url(#circleMask)" />
+            </svg>
+            <p class="content__text">As darkness cloaked the forsaken city, the crew huddled together, their eyes darting nervously into the murky abyss.</p>
+          </div>
         </div>
-      </div>-->
+
+        <div class="content">
+          <h2 class="content__title">More you might like</h2>
+          <div class="card-wrap">
+            <div class="card">
+              <a href="http://tympanus.net/Development/GridToSlider/" class="card__image" style="background-image:url(https://tympanus.net/codrops/wp-content/uploads/2023/05/gridtoslider_feat.jpg)"></a>
+              <h3 class="card__title"><a href="http://tympanus.net/Development/GridToSlider/">Ideas for Grid to Slideshow Switch Animations</a></h3>
+            </div>
+            <div class="card">
+              <a href="http://tympanus.net/Development/OnScrollTypographyAnimations/" class="card__image" style="background-image:url(https://tympanus.net/codrops/wp-content/uploads/2023/01/OnScrollTypographyAnimations__feat.jpg)"></a>
+              <h3 class="card__title"><a href="http://tympanus.net/Development/OnScrollTypographyAnimations/">Ideas for Grid to Slideshow Switch Animations</a></h3>
+            </div>
+            <div class="card">
+              <a href="http://tympanus.net/Development/ScrollPanels/" class="card__image" style="background-image:url(https://tympanus.net/codrops/wp-content/uploads/2022/10/ScrollPanels_featured.jpg)"></a>
+              <h3 class="card__title"><a href="http://tympanus.net/Development/ScrollPanels/">Smooth Panel Scroll Effects</a></h3>
+            </div>
+          </div>
+        </div>
+        <p class="credits">Made by <a href="https://twitter.com/codrops">@codrops</a></p>
+      </main>
     </div>
+
 
     <!--Preloader Intro-->
     <div class="pre-loader">
       <div class="pre-loader-container">
         <div class="pre-loader-header">
           <div class="header">
-            <h1>lazy <span class="highlight">programmer</span>,</h1>
+            <h1>
+              lazy
+              <span class="highlight1" data-text="programmer">programmer</span>,
+            </h1>
             <div class="header-wrapper"></div>
           </div>
           <div class="header">
-            <h1><span class="highlight">terrible</span> with design</h1>
+            <h1>
+              <span class="highlight2" data-text="terrible">terrible</span>
+              with design
+            </h1>
             <div class="header-wrapper"></div>
           </div>
         </div>
@@ -103,5 +173,12 @@
         delay: 2,
       });
     </script>
+
+
+    <script src="./js/gsap.min.js"></script>
+		<script src="./js/Flip.min.js"></script>
+		<script src="./js/ScrollTrigger.min.js"></script>
+		<script src="./js/lenis.min.js"></script>
+		<script type="module" src="./js/index.js"></script>
   </body>
 </html>
