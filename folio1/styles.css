@@ -15,7 +15,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100vh;
-  font-family: "Roslindale Display Condensed";
+  font-family: "tenon", sans-serif;
   z-index: 2;
 }
 
