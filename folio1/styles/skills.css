@@ -83,8 +83,8 @@ section.character::before {
   transform: translateX(-100%);
 }
 
-.saitama::before,
-.saitama .block {
+.html::before,
+.html .block {
   background-color: #e34c26;
 }
 
@@ -113,13 +113,15 @@ section.character::before {
 }
 
 .huge-text {
-  font-size: 25rem;
+  font-size: 10rem;
   width: 100%;
   text-align: center;
   color: #f06529;
   position: absolute;
-  top: 20%;
+  top: 0%;
   left: 0;
+  padding-right: 100%;
+  margin-left: 5%;
   transform: translateY(100%);
   font-weight: 700;
 }

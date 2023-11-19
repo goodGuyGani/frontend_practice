@@ -198,6 +198,14 @@ body #cdawrap {
   /*background: linear-gradient(0deg, transparent, var(--color-bg-alt));*/
 }
 
+.intro2 {
+  text-align: center;
+  place-items: center;
+  display: grid;
+  margin-bottom: 30vh;
+  /*background: linear-gradient(0deg, transparent, var(--color-bg-alt));*/
+}
+
 .intro__title {
   place-items: center;
   margin: 0;
