@@ -18,8 +18,8 @@
 }
 
 .wrapper {
-  width: 300%;
-  height: 200%;
+  width: 400%;
+  height: 100%;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -50,7 +50,7 @@
   height: 1rem;
   position: absolute;
   top: 50%;
-  width: 100%;
+  width: 20%;
   transform: translateY(-50%);
 }
 
@@ -101,6 +101,11 @@ section.character::before {
 .node::before,
 .node .block {
   background-color: #3d863d;
+}
+
+.mysql::before,
+.mysql .block {
+  background-color: #244d89;
 }
 
 .caption {

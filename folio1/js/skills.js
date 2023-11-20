@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.to(".line", {
     height: "100%",
+    width: "100%",
     scrollTrigger: {
       trigger: ".line",
       scrub: 0.5,
