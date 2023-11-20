@@ -13,7 +13,7 @@
   min-height: 100vh;
   font-size: 16px;
   line-height: 1.3;
-  font-family: "Bebas Neue", cursive;
+  font-family: "stinger-variable", sans-serif;
   overflow: hidden;
 }
 
@@ -88,9 +88,19 @@ section.character::before {
   background-color: #e34c26;
 }
 
-.genos::before,
-.genos .block {
-  background-color: #83cdc1;
+.css::before,
+.css .block {
+  background-color: #0277bd;
+}
+
+.react::before,
+.react .block {
+  background-color: #222222;
+}
+
+.node::before,
+.node .block {
+  background-color: #3d863d;
 }
 
 .caption {
@@ -100,14 +110,14 @@ section.character::before {
   width: 30%;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
-  font-family: monospace;
+  font-family: tenon, sans-serif;
   transform: translate(100%, 100%);
 }
 
 .character img {
   position: relative;
   z-index: 10;
-  height: 90vh;
+  height: 80vh;
   width: auto;
   transform: translateY(-100%);
 }
@@ -145,7 +155,7 @@ section.character::before {
   position: absolute;
   bottom: 4rem;
   right: 4rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   width: 30%;
   text-align: right;
   transform: translateY(200%);
