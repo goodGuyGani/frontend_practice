@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
       scrub: 2.3,
       start: "-150 center",
       end: 700,
-      markers: true,
     },
     onComplete: () => {
       // Re-animate or perform any action after the animation is done
