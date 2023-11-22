@@ -25,14 +25,37 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  gsap.to(".line", {
+  gsap.from(".line", {
+    top: "50%",
     height: "100%",
     width: "100%",
+    borderRadius: "0px",
     scrollTrigger: {
       trigger: ".line",
-      scrub: 0.5,
-      start: "center center",
-      end: 2000,
+      scrub: 1,
+      start: "top center",
+      end: 1400,
+    },
+  });
+
+  gsap.from(".shape", {
+    height: "1rem",
+    left: "25%",
+    width: "48vw",
+    borderRadius: "10px",
+    backgroundColor: "#e93f33",
+    scrollTrigger: {
+      trigger: ".shape",
+      scrub: 2.3,
+      start: "-150 center",
+      end: 700,
+      markers: true,
+    },
+    onComplete: () => {
+      // Re-animate or perform any action after the animation is done
+      gsap.to(".shape", {
+        // Your new animation properties
+      });
     },
   });
 

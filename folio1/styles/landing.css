@@ -163,6 +163,22 @@ body #cdawrap {
   /*background: linear-gradient(0deg, transparent, var(--color-bg-alt));*/
 }
 
+.shape {
+  height: 45vw;
+  width: 50vw;
+  background-color: #e93f33;
+  position: absolute;
+  right: 3rem;
+}
+
+.shape2 {
+  height: 45vw;
+  width: 50vw;
+  background-color: #e93f33;
+  position: absolute;
+  right: 3rem;
+}
+
 .intro2 {
   text-align: center;
   place-items: center;
@@ -299,7 +315,7 @@ body #cdawrap {
   font-variation-settings: "wdth" 140, "wght" 150;
   font-weight: 300;
   position: relative;
-
+  color: #fff;
   text-indent: -0.1em;
 }
 

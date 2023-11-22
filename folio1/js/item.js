@@ -50,6 +50,7 @@ export class Item {
     // Create the Flip.from that we'll pass into the ScrollTrigger animation property
     const flip = Flip.from(this.flipstate, {
       ease: "none",
+      color: "fff",
       simple: true,
     })
       .fromTo(
