@@ -86,8 +86,8 @@ export class Item {
     ScrollTrigger.create({
       trigger: this.DOM.titleWrap,
       ease: "none",
-      start: "clamp(top bottom-=10%)",
-      end: "+=40%",
+      start: "clamp(top bottom-=15%)",
+      end: "+=35%",
       scrub: true,
       animation: flip,
     });

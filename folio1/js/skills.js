@@ -27,14 +27,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.from(".line", {
     top: "50%",
-    height: "100%",
-    width: "100%",
-    borderRadius: "0px",
+    height: "30vw",
+    width: "30vw",
+    borderRadius: "100%",
     scrollTrigger: {
+      markers: "true",
       trigger: ".line",
       scrub: 1,
-      start: "top center",
-      end: 1400,
+      start: "100 center",
+      end: 1500,
     },
   });
 
@@ -42,20 +43,27 @@ document.addEventListener("DOMContentLoaded", () => {
     height: "1rem",
     left: "25%",
     width: "48vw",
+    top: "183%",
     borderRadius: "10px",
     backgroundColor: "#e93f33",
     scrollTrigger: {
       trigger: ".shape",
       scrub: 2.3,
-      start: "-150 center",
-      end: 700,
+      start: "clamp(top bottom-=12%)",
+      end: "+=25%",
     },
-    onComplete: () => {
-      // Re-animate or perform any action after the animation is done
-      gsap.to(".shape", {
-        // Your new animation properties
-      });
-    },
+    // onComplete: () => {
+    //   // Re-animate or perform any action after the animation is done
+    //   gsap.to(".shape", {
+    //     height: "1%",
+    //     width: "50px",
+    //     top: "301%",
+    //     scrollTrigger: {
+    //       trigger: ".shape",
+    //       scrub: 2.3,
+    //     },
+    //   });
+    // },
   });
 
   document.querySelectorAll(".character").forEach((el) => {

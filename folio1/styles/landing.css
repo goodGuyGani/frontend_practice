@@ -168,7 +168,9 @@ body #cdawrap {
   width: 50vw;
   background-color: #e93f33;
   position: absolute;
+  top: 125%;
   right: 3rem;
+  border-radius: 0px;
 }
 
 .shape2 {
