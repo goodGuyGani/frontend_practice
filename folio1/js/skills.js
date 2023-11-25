@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     width: "30vw",
     borderRadius: "100%",
     scrollTrigger: {
-      markers: "true",
+ 
       trigger: ".line",
       scrub: 1,
       start: "100 center",
