@@ -25,17 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  gsap.from(".line", {
+  gsap.to(".line", {
     top: "50%",
-    height: "30vw",
-    width: "30vw",
-    borderRadius: "100%",
+    height: "100%",
+    width: "100%",
+    borderRadius: "0",
     scrollTrigger: {
- 
       trigger: ".line",
-      scrub: 1,
-      start: "100 center",
-      end: 1500,
+      scrub: 2,
+      start: "-150 center",
+      end: 1400,
     },
   });
 
@@ -64,6 +63,17 @@ document.addEventListener("DOMContentLoaded", () => {
     //     },
     //   });
     // },
+  });
+
+  gsap.to(".cards", {
+    top: "490%",
+    scrollTrigger: {
+      markers: true,
+      trigger: ".cards",
+      scrub: 2,
+      start: "clamp(top bottom-=12%)",
+      end: "+=25%",
+    },
   });
 
   document.querySelectorAll(".character").forEach((el) => {
