@@ -68,11 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.to(".cards", {
     top: "490%",
     scrollTrigger: {
-      markers: true,
       trigger: ".cards",
       scrub: 2,
       start: "clamp(top bottom-=12%)",
-      end: "+=25%",
+      end: "+=30%",
     },
   });
 
