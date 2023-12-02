@@ -75,6 +75,16 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  gsap.from(".gallery-wrap", {
+    x: "500%",
+    scrollTrigger: {
+      trigger: ".gallery-wrap",
+      scrub: 2,
+      start: "clamp(100 bottom-=12%)",
+      end: "+=50%",
+    },
+  });
+
   document.querySelectorAll(".character").forEach((el) => {
     gsap.to(el.querySelector(".caption"), {
       x: 0,

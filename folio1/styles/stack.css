@@ -13,7 +13,6 @@
   line-height: 1;
   position: static;
   top: 0;
-  z-index: 4;
   width: 100%;
 
   background: #0a0a0a;
@@ -168,9 +167,9 @@
 
 .gallery-wrap {
   position: absolute;
-  top: 550%;
-  z-index: -1;
+  top: 520%;
   width: 100%;
+  z-index: 1;
   height: 100vh;
   display: flex;
   align-items: center;
