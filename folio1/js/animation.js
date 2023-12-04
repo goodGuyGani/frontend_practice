@@ -65,6 +65,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // },
   });
 
+  gsap.from(".content__text", {
+    y: "100%",
+    scrollTrigger: {
+      trigger: ".content__text",
+      scrub: 2,
+      start: "clamp(-300 bottom-=12%)",
+      end: "+=25%",
+    },
+  });
+
   gsap.to(".cards", {
     top: "490%",
     scrollTrigger: {

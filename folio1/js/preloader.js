@@ -51,7 +51,11 @@ function scrollToTop() {
     top: 0,
     behavior: "smooth",
   });
-  gsap.from(".intro__title-pre", { x: 200, duration: 2, ease: "power3.inOut" });
+  gsap.to(".intro__title-pre", {
+    height: "100%",
+    duration: 2,
+    ease: "power3.inOut",
+  });
   gsap.from(".intro__title-sub", {
     y: 50,
     duration: 2,
