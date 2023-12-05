@@ -46,7 +46,7 @@
 }
 
 .line {
-  background-color: #e93f33;
+  background: linear-gradient(to right, #e93f33, #b42550, #712551, #341f38);
   height: 1rem;
   position: absolute;
   top: 50%;

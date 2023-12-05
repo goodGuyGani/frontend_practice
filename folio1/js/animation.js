@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     top: "50%",
     height: "100%",
     width: "100%",
+    backgroundImage:
+      "linear-gradient(to right bottom, #e93f33, #b42550, #712551, #341f38, #0a0a0a);",
     borderRadius: "0",
     scrollTrigger: {
       trigger: ".line",
@@ -44,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     width: "48vw",
     top: "183%",
     borderRadius: "10px",
-    backgroundColor: "#e93f33",
+    backgroundImage: "#e93f33",
     scrollTrigger: {
       trigger: ".shape",
       scrub: 2.3,
@@ -93,6 +95,19 @@ document.addEventListener("DOMContentLoaded", () => {
       start: "clamp(100 bottom-=12%)",
       end: "+=50%",
     },
+    // onComplete: () => {
+    //   // Re-animate or perform any action after the animation is done
+    //   gsap.to(".gallery-wrap", {
+    //     height: "0px",
+    //     scrollTrigger: {
+    //       markers: "true",
+    //       trigger: ".project",
+    //       scrub: 3,
+    //       start: "top bottom",
+    //       end: 2000,
+    //     },
+    //   });
+    // },
   });
 
   document.querySelectorAll(".character").forEach((el) => {

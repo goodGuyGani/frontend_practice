@@ -537,8 +537,9 @@
 }
 
 .gallery--switch .gallery__item--center {
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
+  margin-bottom: 120px;
   aspect-ratio: auto;
   filter: brightness(0.5);
 }
