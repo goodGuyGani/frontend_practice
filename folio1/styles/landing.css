@@ -230,6 +230,13 @@ a:focus-visible {
   justify-content: center;
 }
 
+.title-wrap2 {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
 .no-content {
   visibility: hidden;
 }

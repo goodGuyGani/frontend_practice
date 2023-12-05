@@ -1,0 +1,19 @@
+.filler {
+  height: 135vw;
+}
+
+.projects {
+  height: 100vw;
+  background-image: linear-gradient(
+    to top,
+    #e93f33,
+    #b42550,
+    #712551,
+    #341f38,
+    #0a0a0a
+  );
+}
+
+.second {
+  opacity: 0;
+}

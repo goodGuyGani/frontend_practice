@@ -27,16 +27,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.to(".line", {
     top: "50%",
-    height: "100%",
-    width: "100%",
+    height: "25%",
+    width: "28%",
     backgroundImage:
       "linear-gradient(to right bottom, #e93f33, #b42550, #712551, #341f38, #0a0a0a);",
-    borderRadius: "0",
+    left: "43%",
     scrollTrigger: {
       trigger: ".line",
       scrub: 2,
-      start: "-150 center",
-      end: 1400,
+      start: "clamp(top bottom-=12%)",
+      end: "+=25%",
     },
   });
 
@@ -108,6 +108,28 @@ document.addEventListener("DOMContentLoaded", () => {
     //     },
     //   });
     // },
+  });
+
+  gsap.from(".content2", {
+    rotation: -90,
+    x: "10%",
+    y: "-20%",
+    scrollTrigger: {
+      trigger: ".content2",
+      scrub: 2,
+      start: "clamp(1000 bottom-=12%)",
+      end: "+=30%",
+    },
+  });
+
+  gsap.to(".second", {
+    opacity: "100%",
+    scrollTrigger: {
+      trigger: ".second",
+      scrub: 2,
+      start: "clamp(350 bottom-=12%)",
+      end: "+=30%",
+    },
   });
 
   document.querySelectorAll(".character").forEach((el) => {
