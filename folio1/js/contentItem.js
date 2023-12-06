@@ -14,17 +14,17 @@ export class ContentItem {
 
   constructor(DOM_el) {
     this.DOM.el = DOM_el;
-    this.DOM.backCtrl = this.DOM.el.querySelector(".content__back");
-    this.DOM.title = this.DOM.el.querySelector(".content__title");
-    this.DOM.description = this.DOM.el.querySelector(".content__desc");
+    this.DOM.backCtrl = this.DOM.el.querySelector(".content5__back");
+    this.DOM.title = this.DOM.el.querySelector(".content5__title");
+    this.DOM.description = this.DOM.el.querySelector(".content5__desc");
     this.DOM.thumbgrid = this.DOM.el.querySelector(
-      ".content__images > .thumbgrid"
+      ".content5__images > .thumbgrid"
     );
     this.DOM.prevThumb = this.DOM.el.querySelector(
-      ".content__images > .thumb--prev"
+      ".content5__images > .thumb--prev"
     );
     this.DOM.nextThumb = this.DOM.el.querySelector(
-      ".content__images > .thumb--next"
+      ".content5__images > .thumb--next"
     );
 
     // Apply the Splitting js to the title

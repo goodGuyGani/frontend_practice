@@ -13,7 +13,7 @@ let thumbGrids = [];
 
 // Content items
 let contentItems = [];
-[...document.querySelectorAll(".content-wrap > .content")].forEach(
+[...document.querySelectorAll(".content5-wrap > .content5")].forEach(
   (contentItem) => {
     contentItems.push(new ContentItem(contentItem));
   }
@@ -43,7 +43,7 @@ for (const menuItem of menuItems) {
       menuItem.leaveTL.kill();
     }
 
-    if (mode === "content") return;
+    if (mode === "content5") return;
 
     menuItem.mouseEnterTimeout = setTimeout(() => {
       menuItem.thumbGrid.DOM.el.classList.add("thumbgrid--current");
@@ -100,7 +100,7 @@ for (const menuItem of menuItems) {
       menuItem.enterTL.kill();
     }
 
-    if (mode === "content") return;
+    if (mode === "content5") return;
 
     menuItem.mouseLeaveTimeout = setTimeout(() => {
       menuItem.thumbGrid.DOM.el.classList.remove("thumbgrid--current");
@@ -144,7 +144,7 @@ for (const menuItem of menuItems) {
     if (isAnimating) return;
 
     isAnimating = true;
-    mode = "content";
+    mode = "content5";
 
     const DURATION = 0.75;
     const EASE = "expo";
@@ -168,7 +168,7 @@ for (const menuItem of menuItems) {
           ease: EASE,
         },
         onStart: () => {
-          menuItem.contentItem.DOM.el.classList.add("content--current");
+          menuItem.contentItem.DOM.el.classList.add("content5--current");
         },
         onComplete: () => {
           // Reset values from last hover state
@@ -226,18 +226,18 @@ for (const menuItem of menuItems) {
         }).add(() => {
           // Show one image rather than the four together
           menuItem.contentItem.DOM.thumbgrid.classList.add(
-            "thumbgrid--content"
+            "thumbgrid--content5"
           );
         }, DURATION);
       }, "menu")
-      .addLabel("content", "menu+=0.4")
+      .addLabel("content5", "menu+=0.4")
       .to(
         menuItems.map((item) => item.DOM.el),
         {
           opacity: 0,
           onComplete: () => menu.classList.add("menu--hidden"),
         },
-        "content"
+        "content5"
       )
       .fromTo(
         menuItem.contentItem.DOM.titleChars,
@@ -248,7 +248,7 @@ for (const menuItem of menuItems) {
           stagger: 0.025,
           xPercent: 0,
         },
-        "content"
+        "content5"
       )
       .fromTo(
         [
@@ -263,7 +263,7 @@ for (const menuItem of menuItems) {
           opacity: 1,
           yPercent: 0,
         },
-        "content"
+        "content5"
       )
       .fromTo(
         [
@@ -280,7 +280,7 @@ for (const menuItem of menuItems) {
           xPercent: 0,
           opacity: 1,
         },
-        "content"
+        "content5"
       );
   });
 
@@ -301,12 +301,12 @@ for (const menuItem of menuItems) {
           ease: EASE,
         },
         onComplete: () => {
-          menuItem.contentItem.DOM.el.classList.remove("content--current");
+          menuItem.contentItem.DOM.el.classList.remove("content5--current");
           menu.classList.remove("menu--hidden");
           isAnimating = false;
         },
       })
-      .addLabel("content", 0)
+      .addLabel("content5", 0)
       .to(
         [
           menuItem.contentItem.DOM.nextThumb,
@@ -317,7 +317,7 @@ for (const menuItem of menuItems) {
           xPercent: (pos) => (pos ? -80 : 80),
           opacity: 0,
         },
-        "content"
+        "content5"
       )
       .to(
         [
@@ -328,19 +328,19 @@ for (const menuItem of menuItems) {
           opacity: 0,
           yPercent: -100,
         },
-        "content"
+        "content5"
       )
       .to(
         menuItem.contentItem.DOM.titleChars,
         {
           xPercent: 100,
         },
-        "content"
+        "content5"
       )
       .add(() => {
         // Show one image rather than the four together
         menuItem.contentItem.DOM.thumbgrid.classList.remove(
-          "thumbgrid--content"
+          "thumbgrid--content5"
         );
 
         const thumbgridItems = menuItem.contentItem.DOM.thumbgrid.children;
@@ -360,8 +360,8 @@ for (const menuItem of menuItems) {
           simple: true,
           prune: true,
         });
-      }, "content")
-      .addLabel("menu", "content+=0.2")
+      }, "content5")
+      .addLabel("menu", "content5+=0.2")
       .to(
         menuItems.map((item) => item.DOM.el),
         {
