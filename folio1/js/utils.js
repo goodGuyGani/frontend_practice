@@ -20,4 +20,13 @@ const preloadImages = (selector = "img") => {
   });
 };
 
-export { preloadFonts, preloadImages };
+const wrapElements = (elems, wrapType, wrapClass) => {
+  elems.forEach((char) => {
+    const wrapEl = document.createElement(wrapType);
+    wrapEl.classList = wrapClass;
+    char.parentNode.appendChild(wrapEl);
+    wrapEl.appendChild(char);
+  });
+};
+
+export { preloadFonts, preloadImages, wrapElements };
