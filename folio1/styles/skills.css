@@ -86,7 +86,7 @@ section.character::before {
 
 .html::before,
 .html .block {
-  background-color: #e34c26;
+  background-color: #b9284d;
 }
 
 .css::before,
@@ -94,19 +94,41 @@ section.character::before {
   background-color: #0277bd;
 }
 
-.react::before,
-.react .block {
-  background-color: #222222;
+.design::before,
+.design .block {
+  background: linear-gradient(
+    to right bottom,
+    #e93f33,
+    #b42550,
+    #712551,
+    #341f38,
+    #0a0a0a
+  );
 }
 
-.node::before,
-.node .block {
-  background-color: #3d863d;
+.frontend::before,
+.frontend .block {
+  background: linear-gradient(
+    to left,
+    #b9284d,
+    #a02552,
+    #852653,
+    #6b2650,
+    #512448
+  );
 }
 
-.mysql::before,
-.mysql .block {
-  background-color: #244d89;
+.backend::before,
+.backend .block {
+  background: linear-gradient(
+    to left top,
+    #341f38,
+    #522448,
+    #742651,
+    #982553,
+    #b9284d,
+    #e93f33
+  );
 }
 
 .caption {

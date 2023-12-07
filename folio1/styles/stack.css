@@ -31,7 +31,7 @@
 
 .section__title {
   font-family: "stinger-variable", sans-serif;
-  color: #e93f33;
+  color: #b9284d;
   font-weight: 300;
   font-size: clamp(2rem, 17vw, 12.5rem);
   margin: 5vh 0 6vh;
@@ -136,7 +136,7 @@
 
 .section__header {
   display: flex;
-  border-bottom: 1px solid #e93f33;
+  border-bottom: 1px solid #b9284d;
   width: 100%;
   align-items: center;
   justify-content: space-around;

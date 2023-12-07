@@ -9,9 +9,9 @@
   --color-text: #fff;
   --color-bg: #0a0a0a;
   --color-bg-alt: hsl(15deg 55% 6%);
-  --color-link: rgba(255, 255, 255, 0.5);
+  --color-link: #c27e73;
   --color-link-hover: #fff;
-  --color-title: #e93f33;
+  --color-title: #b9284d;
 }
 
 body {

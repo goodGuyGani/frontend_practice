@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.from(".content2", {
     rotation: -90,
-    x: "10%",
+    x: "17.5%",
     y: "-20%",
     scrollTrigger: {
       trigger: ".content2",

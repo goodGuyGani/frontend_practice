@@ -139,13 +139,13 @@ body {
   font-size: 7vw;
   line-height: 90%;
   color: #0a0a0a;
-  -webkit-text-stroke: 1px #e93f33;
+  -webkit-text-stroke: 1px #b1284a;
 }
 
 .header h1 .highlight1::before {
   content: attr(data-text);
   position: absolute;
-  color: #e93f33;
+  color: #b9284d;
   overflow: hidden;
   width: 0;
   top: -2px;
@@ -157,7 +157,7 @@ body {
 .header h1 .highlight2::before {
   content: attr(data-text);
   position: absolute;
-  color: #e93f33;
+  color: #b9284d;
   overflow: hidden;
   top: -2px;
   width: 0;

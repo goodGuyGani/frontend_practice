@@ -3,6 +3,7 @@
 }
 
 .projects {
+  width: 100vw;
   height: 200vw;
   background-image: linear-gradient(
     to top,
@@ -34,7 +35,7 @@
   --color-bg: #141418;
   --color-link: #a8dbe0;
   --color-link-hover: #fff;
-  --color-title: #99dde2;
+  --color-title: #efafa5;
   --color-title-alt: #e2d2c3;
   --color-border: rgb(91 91 91 / 44%);
   --color-menu-item: #393634;
