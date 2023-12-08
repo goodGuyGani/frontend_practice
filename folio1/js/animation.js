@@ -111,13 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   gsap.from(".content2", {
-    rotation: -90,
-    x: "17.5%",
-    y: "-20%",
+    x: "100%",
     scrollTrigger: {
       trigger: ".content2",
       scrub: 2,
-      start: "clamp(1000 bottom-=12%)",
+      start: "clamp(700 bottom-=12%)",
       end: "+=30%",
     },
   });
