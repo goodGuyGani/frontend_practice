@@ -6,10 +6,10 @@
     <title>Harzhedzmi Gani</title>
     <link rel="stylesheet" href="./styles/preloader.css" />
     <link rel="stylesheet" href="./styles/landing.css" />
-    <link rel="stylesheet" href="./styles/skills.css">
-    <link rel="stylesheet" href="./styles/stack.css">
-    <link rel="stylesheet" href="./styles/projects.css">
-    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/skills.css" />
+    <link rel="stylesheet" href="./styles/stack.css" />
+    <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
     <script src="js/gsap.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
 
@@ -38,114 +38,183 @@
         );
     </script>
   </head>
+  <body>
     <div class="website-content">
-      <main>
-        <div class="shape"></div>
-        <!--Content-->
-        <div class="intro"> 
-          <h1 class="intro__title"> 
-            <span class="intro__title-pre">Harzhedzmi Gani</span> 
-            <span class="intro__title-sub">I am a <a href="https://codepen.io/supah/pen/poxmKPQ">Web</a> Developer</span> 
-          </h1> 
-          <span class="intro__info">Scroll moderately to fully experience the animations</span> 
+      <div class="shape"></div>
+      <!--Content-->
+      <div class="intro">
+        <h1 class="intro__title">
+          <span class="intro__title-pre">Harzhedzmi Gani</span>
+          <span class="intro__title-sub"
+            >I am a
+            <a href="https://codepen.io/supah/pen/poxmKPQ">Web</a>
+            Developer</span
+          >
+        </h1>
+        <span class="intro__info"
+          >Scroll moderately to fully experience the animations</span
+        >
+      </div>
+      <div class="content-wrap">
+        <div class="content">
+          <div class="title-wrap">
+            <span class="title title--up">About</span>
+            <span class="title title--down">Me</span>
+          </div>
         </div>
-        <div class="content-wrap">
-          <div class="content">
-            <div class="title-wrap">
-              <span class="title title--up">About</span>
-              <span class="title title--down">Me</span>
+        <div class="content content--layout content--layout-1">
+          <svg
+            class="content__img content__img--1"
+            width="896"
+            height="1344"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 896 1344"
+          >
+            <defs>
+              <filter id="displacementFilter">
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.03"
+                  numOctaves="3"
+                  result="noise"
+                />
+                <feDisplacementMap
+                  in="SourceGraphic"
+                  in2="noise"
+                  scale="50"
+                  xChannelSelector="R"
+                  yChannelSelector="G"
+                />
+              </filter>
+              <mask id="circleMask">
+                <circle
+                  cx="50%"
+                  cy="50%"
+                  r="0"
+                  data-value-final="820"
+                  fill="white"
+                  class="mask"
+                  style="filter: url(#displacementFilter)"
+                />
+              </mask>
+            </defs>
+            <image
+              xlink:href="./img/ganineo.jpg"
+              width="896"
+              height="1344"
+              mask="url(#circleMask)"
+            />
+          </svg>
+          <p class="content__text" style="color: #e2d2c3">
+            I am an aspiring web developer with a degree in Information
+            Technology. I am familiar with React, Node.js, and MySQL, and I keep
+            track of the latest trends in web development. I have a passion for
+            creating interactive websites and desktop applications, and I love
+            building applications with JavaScript. I strive to utilize advanced
+            libraries to enhance and increase the reactivity of my applications.
+            I am always eager to learn new tools to improve my craft.
+          </p>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="logo2"></div>
+
+        <div class="wrapper">
+          <section class="intro2">
+            <div class="content3" style="z-index: 1">
+              <div class="title-wrap">
+                <span class="title title--up">My</span>
+                <span class="title title--down">skills</span>
+              </div>
             </div>
-          </div>
-          <div class="content content--layout content--layout-1">
-            <svg class="content__img content__img--1" width="896" height="1344" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 896 1344">
-              <defs>
-                <filter id="displacementFilter">
-                  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise" />
-                  <feDisplacementMap in="SourceGraphic" in2="noise" scale="50" xChannelSelector="R" yChannelSelector="G" />
-                </filter>
-                <mask id="circleMask">
-                  <circle cx="50%" cy="50%" r="0" data-value-final="820" fill="white" class="mask" style="filter: url(#displacementFilter);" />
-                </mask>
-              </defs>
-              <image xlink:href="./img/ganineo.jpg" width="896" height="1344" mask="url(#circleMask)" />
-            </svg>
-            <p class="content__text" style="color: #e2d2c3;">I am an aspiring web developer with a degree in Information Technology. I am familiar with React, Node.js, and MySQL, and I keep track of the latest trends in web development. I have a passion for creating interactive websites and desktop applications, and I love building applications with JavaScript. I strive to utilize advanced libraries to enhance and increase the reactivity of my applications. I am always eager to learn new tools to improve my craft.</p>
-          </div>
+
+            <div class="line"></div>
+          </section>
+
+          <section class="design character">
+            <div class="block"></div>
+            <img src="./img/design/pngwing.com (3).png" alt="design" /><span
+              class="huge-text"
+              style="color: #d7363d"
+              >Design</span
+            >
+            <div class="caption">
+              I started learning web development not long ago, and I'm still
+              exploring various aspects of design, which means my web design
+              skills are not yet at the level of experienced designers out
+              there. Currently, I use Figma as my primary software for web
+              design, but I'm committed to continuous improvement and will keep
+              working on enhancing my skills.
+            </div>
+            <div class="nickname"><span>Skill Rating</span>4/10</div>
+            <div class="quote">
+              Completely freaking terrible, do not let me design anything!
+            </div>
+          </section>
+
+          <section class="frontend character">
+            <div class="block"></div>
+            <img
+              src="./img/design/pngwing.com.png"
+              alt="frontend"
+              style="height: 30vw"
+            /><span class="huge-text" style="color: #a02552">Frontend</span>
+            <div class="caption">
+              I really enjoy working on the frontend of websites because I love
+              making things look good and pleasing to the eye. However, there
+              are moments when dealing with CSS can be a bit tricky for me. It's
+              important to know that my occasional frustration with CSS doesn't
+              mean I don't like it. It simply means that I recognize the need
+              for more practice and hands-on experience to become more skilled
+              at it. I'm on a learning journey, and with more experience, I
+              believe I'll get the hang of it and enjoy it even more.
+            </div>
+            <div class="nickname"><span>Skill Rating</span>6/10</div>
+            <div class="quote">
+              I mean, it's alright, I could do it, give me a try and I will work
+              my ass off.
+            </div>
+          </section>
+
+          <section class="backend character" style="position: sticky; top: 0">
+            <div class="block"></div>
+            <img src="./img/design/pngwing.com (6).png" alt="" /><span
+              class="huge-text"
+              style="color: #982553"
+              >Backend</span
+            >
+            <div class="caption">
+              To be completely honest, my dream job is to become a Full-stack
+              Developer. While PHP initially seemed straightforward, I
+              discovered numerous advanced technologies in the field. I've
+              experimented with a few, but the one that truly excites me is
+              Node.js. The community surrounding Node.js has made
+              problem-solving more accessible, with a plethora of free packages
+              available. I acknowledge that I am still in the learning phase and
+              have room for improvement, but my enthusiasm for mastering Node.js
+              continues to grow.
+            </div>
+            <div class="nickname"><span>Skill Rating</span>8/10</div>
+            <div class="quote">Need more study, but I can do it.</div>
+          </section>
         </div>
-
-        
-        <div class="skills">
-        
-          <div class="logo2">
-          </div>
-        
-          
-          <div class="wrapper">
-            <section class="intro2">
-
-                <div class="content3" style="z-index: 1;">
-                  <div class="title-wrap">
-                    <span class="title title--up">My</span>
-                    <span class="title title--down">skills</span>
-                  </div>
-                </div>
-
-              <div class="line"></div>
-            </section>
-
-            <section class="design character">
-              <div class="block"></div>
-              <img src="./img/design/pngwing.com (3).png" alt="design" /><span class="huge-text" style="color: #d7363d;">Design</span>
-              <div class="caption">
-                I started learning web development not long ago, and I'm still exploring various aspects of design, which means my web design skills are not yet at the level of experienced designers out there. Currently, I use Figma as my primary software for web design, but I'm committed to continuous improvement and will keep working on enhancing my skills.
-              </div>
-              <div class="nickname"><span>Skill Rating</span>4/10</div>
-              <div class="quote">
-                Completely freaking terrible, do not let me design anything!
-              </div>
-            </section>
-
-            <section class="frontend character">
-              <div class="block"></div>
-              <img src="./img/design/pngwing.com.png" alt="frontend" style="height: 30vw;"/><span class="huge-text" style="color: #a02552;">Frontend</span>
-              <div class="caption">
-                I really enjoy working on the frontend of websites because I love making things look good and pleasing to the eye. However, there are moments when dealing with CSS can be a bit tricky for me. It's important to know that my occasional frustration with CSS doesn't mean I don't like it. It simply means that I recognize the need for more practice and hands-on experience to become more skilled at it. I'm on a learning journey, and with more experience, I believe I'll get the hang of it and enjoy it even more.
-              </div>
-              <div class="nickname"><span>Skill Rating</span>6/10</div>
-              <div class="quote">
-                I mean, it's alright, I could do it, give me a try and I will work my ass off.
-              </div>
-            </section>
-
-            <section class="backend character" style="position: sticky; top: 0;">
-              <div class="block"></div>
-              <img src="./img/design/pngwing.com (6).png" alt="" /><span class="huge-text" style="color: #982553;">Backend</span>
-              <div class="caption">
-                To be completely honest, my dream job is to become a Full-stack Developer. While PHP initially seemed straightforward, I discovered numerous advanced technologies in the field. I've experimented with a few, but the one that truly excites me is Node.js. The community surrounding Node.js has made problem-solving more accessible, with a plethora of free packages available. I acknowledge that I am still in the learning phase and have room for improvement, but my enthusiasm for mastering Node.js continues to grow.
-              </div>
-              <div class="nickname"><span>Skill Rating</span>8/10</div>
-              <div class="quote">
-                Need more study, but I can do it.
-              </div>
-            </section>
-            
-          </div>
-
-        </div>
-      
+      </div>
 
       <div class="cards">
         <div class="card">
           <div class="section section--showcase">
-				    <div class="section__header">
-					    <span class="section__year">Backend</span>
-					    <h2 class="section__title section__title--medium">Tech <br> Stack</h2>
-					    <span class="section__year">Frontend</span>
-				    </div>
+            <div class="section__header">
+              <span class="section__year">Backend</span>
+              <h2 class="section__title section__title--medium">
+                Tech <br />
+                Stack
+              </h2>
+              <span class="section__year">Frontend</span>
+            </div>
           </div>
-
-          
-          
         </div>
       </div>
       <div class="gallery-wrap">
@@ -164,7 +233,7 @@
           ></div>
           <div
             class="gallery__item gallery__item--xl gallery__item--center"
-            style="background-image: url(img/ruby2.png);"
+            style="background-image: url(img/ruby2.png)"
           ></div>
           <div
             class="gallery__item gallery__item--l"
@@ -179,23 +248,27 @@
             style="background-image: url(img/gsap.svg)"
           ></div>
           <div class="caption2">
-            I would not say I am an expert with these technologies. But I have use them in various school projects, which makes me feel comfortable with them. I know which technologies I should use in my projects, which furthermore make the developement process easier.
+            I would not say I am an expert with these technologies. But I have
+            use them in various school projects, which makes me feel comfortable
+            with them. I know which technologies I should use in my projects,
+            which furthermore make the developement process easier.
           </div>
         </div>
       </div>
 
       <div class="filler"></div>
       <div class="projects">
-      
-
         <div class="content2">
-          <div class="title-wrap" style="padding-top: 120vh; padding-bottom: 10%;">
+          <div
+            class="title-wrap"
+            style="padding-top: 120vh; padding-bottom: 10%"
+          >
             <span class="second title title--up">My</span>
             <span class="title title--down">Projects</span>
           </div>
         </div>
 
-        <div class="pro" style="z-index: 10;">
+        <div class="pro" style="z-index: 10">
           <div class="thumbgrid-wrap">
             <div class="thumbgrid">
               <div class="thumbgrid__item pos-1">
@@ -385,7 +458,8 @@
               <button class="content5__back unbutton">&larr; back</button>
               <h2 class="content5__title"><i>A</i>nimal<i>K</i>ingdom</h2>
               <p class="content5__desc">
-                A simple eLearning school project about animals for children, with Animal Recognition capabilities, using React and NodeJS.
+                A simple eLearning school project about animals for children,
+                with Animal Recognition capabilities, using React and NodeJS.
               </p>
               <div class="content5__images">
                 <div class="thumb thumb--prev">
@@ -409,8 +483,8 @@
               <button class="content5__back unbutton">&larr; back</button>
               <h2 class="content5__title"><i>A</i>lga<i>Z</i>en</h2>
               <p class="content5__desc">
-                A drink made from a mix of algae and other superfoods that provide
-                sustained energy and boost the immune system.
+                A drink made from a mix of algae and other superfoods that
+                provide sustained energy and boost the immune system.
               </p>
               <div class="content5__images">
                 <div class="thumb thumb--prev">
@@ -432,8 +506,8 @@
               <button class="content5__back unbutton">&larr; back</button>
               <h2 class="content5__title"><i>N</i>euro<i>B</i>oost</h2>
               <p class="content5__desc">
-                A cognitive enhancing drink infused with adaptogens, nootropics, and
-                vitamins to enhance focus and mental clarity.
+                A cognitive enhancing drink infused with adaptogens, nootropics,
+                and vitamins to enhance focus and mental clarity.
               </p>
               <div class="content5__images">
                 <div class="thumb thumb--prev">
@@ -525,8 +599,8 @@
               <button class="content5__back unbutton">&larr; back</button>
               <h2 class="content5__title"><i>F</i>ruit<i>F</i>use</h2>
               <p class="content5__desc">
-                A fruity drink infused with vitamins and antioxidants that helps to
-                protect the skin from UV damage.
+                A fruity drink infused with vitamins and antioxidants that helps
+                to protect the skin from UV damage.
               </p>
               <div class="content5__images">
                 <div class="thumb thumb--prev">
@@ -549,21 +623,24 @@
             <a class="menu__item">
               <span class="menu__item-title"><i>A</i>nimal<i>K</i>ingdom</span>
               <span class="menu__item-desc"
-                >A simple eLearning school project about animals for children, with Animal Recognition capabilities, using React and NodeJS.</span
+                >A simple eLearning school project about animals for children,
+                with Animal Recognition capabilities, using React and
+                NodeJS.</span
               >
             </a>
             <a class="menu__item">
               <span class="menu__item-title"><i>A</i>lga<i>Z</i>en</span>
               <span class="menu__item-desc"
-                >A drink made from a mix of algae and other superfoods that provide
-                sustained energy and boost the immune system.</span
+                >A drink made from a mix of algae and other superfoods that
+                provide sustained energy and boost the immune system.</span
               >
             </a>
             <a class="menu__item">
               <span class="menu__item-title"><i>N</i>euro<i>B</i>oost</span>
               <span class="menu__item-desc"
-                >A cognitive enhancing drink infused with adaptogens, nootropics,
-                and vitamins to enhance focus and mental clarity.</span
+                >A cognitive enhancing drink infused with adaptogens,
+                nootropics, and vitamins to enhance focus and mental
+                clarity.</span
               >
             </a>
             <a class="menu__item">
@@ -592,35 +669,44 @@
             <a class="menu__item">
               <span class="menu__item-title"><i>F</i>ruit<i>F</i>use</span>
               <span class="menu__item-desc"
-                >A fruity drink infused with vitamins and antioxidants that helps to
-                protect the skin from UV damage.</span
+                >A fruity drink infused with vitamins and antioxidants that
+                helps to protect the skin from UV damage.</span
               >
             </a>
           </nav>
         </div>
 
-
         <div class="container">
           <div class="fs-form-wrap" id="fs-form-wrap">
             <div class="fs-title">
-                  <span class="title title--up" style="font-size: 4rem;">Contact</span>
-                  <span class="title title--down" style="font-size: 4rem;">Me</span>
+              <span class="title title--up" style="font-size: 4rem"
+                >Contact</span
+              >
+              <span class="title title--down" style="font-size: 4rem">Me</span>
               <div class="codrops-top">
                 <a
                   class="codrops-icon codrops-icon-prev"
                   href="http://tympanus.net/Development/NotificationStyles/"
-                  ><img src="img/facebook.svg" alt=""><span>Click to visit my Facebook</span></a
+                  ><img src="img/facebook.svg" alt="" /><span
+                    >Click to visit my Facebook</span
+                  ></a
                 >
                 <a
                   class="codrops-icon codrops-icon-drop"
                   href="http://tympanus.net/codrops/?p=19520"
-                  ><img src="img/instagram.svg" alt=""><span>Click to visit my Instagram</span></a
+                  ><img src="img/instagram.svg" alt="" /><span
+                    >Click to visit my Instagram</span
+                  ></a
                 >
                 <a class="codrops-icon codrops-icon-info" href="#"
-                  ><img src="img/github.svg" alt=""><span>Click to visit my Github</span></a
+                  ><img src="img/github.svg" alt="" /><span
+                    >Click to visit my Github</span
+                  ></a
                 >
                 <a class="codrops-icon codrops-icon-info" href="#"
-                  ><img src="img/mail.svg" alt=""><span>Click to send me an email</span></a
+                  ><img src="img/mail.svg" alt="" /><span
+                    >Click to send me an email</span
+                  ></a
                 >
               </div>
             </div>
@@ -793,7 +879,7 @@
                   />
                 </li>
               </ol>
-              
+
               <!-- /fs-fields -->
               <button class="fs-submit" type="submit">Send answers</button>
               <h1 class="success">Your Message Has Been Sent!</h1>
@@ -803,11 +889,7 @@
           <!-- /fs-form-wrap -->
         </div>
       </div>
-
     </div>
-
-  </main>
-
 
     <!--Preloader Intro-->
     <div class="pre-loader">
@@ -849,8 +931,6 @@
     <script src="./js/imagesloaded.pkgd.min.js"></script>
     <script src="./js/splitting.min.js"></script>
 
-    <script src="./app.js"></script>
-
     <script src="js/classie.js"></script>
     <script src="js/selectFx.js"></script>
     <script src="js/fullscreenForm.js"></script>
@@ -879,11 +959,9 @@
       })();
     </script>
 
-
-    <script src="./js/gsap.min.js"></script>
-		<script src="./js/Flip.min.js"></script>
-		<script src="./js/ScrollTrigger.min.js"></script>
-		<script src="./js/lenis.min.js"></script>
-		<script type="module" src="./js/index.js"></script>
+    <script src="./js/Flip.min.js"></script>
+    <script src="./js/ScrollTrigger.min.js"></script>
+    <script src="./js/lenis.min.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
