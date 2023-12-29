@@ -237,7 +237,7 @@
   justify-content: center;
   gap: 2rem;
   --size-factor: 1.25;
-  --item-height: 20vh;
+  --item-height: 17vh;
 }
 
 .gallery--row .gallery__item {
@@ -739,5 +739,11 @@
 
   body #cdawrap {
     justify-self: end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery--row {
+    --item-height: 8vh;
   }
 }

@@ -1,10 +1,10 @@
 .filler {
-  height: 135vw;
+  height: 180vw;
 }
 
 .projects {
   width: 100vw;
-  height: 180vw;
+  height: 200vw;
   background-image: linear-gradient(
     to top,
     #e93f33,
@@ -593,4 +593,13 @@
 
   /* Distance from center where 1 is far left/far right, 0 is center */
   --distance-percent: calc((var(--distance) / var(--char-center)));
+}
+
+@media screen and (max-width: 768px) {
+  .filler {
+    height: 250vw;
+  }
+  .projects {
+    height: 330vw;
+  }
 }

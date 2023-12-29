@@ -194,3 +194,17 @@ section.character::before {
   content: "";
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .line {
+    top: 54%;
+    width: 30%;
+  }
+  .huge-text {
+    font-size: 6rem;
+  }
+  .caption {
+    left: -1rem;
+    bottom: 10rem;
+  }
+}

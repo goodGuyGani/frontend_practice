@@ -1,6 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
   const sections = gsap.utils.toArray("section");
 
+  //for responsiveness
+  const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+  let shapeTop = "183%";
+  let lineLeft = "43%";
+  let shapeWidth = "48vw";
+  let shapeLeft = "25%";
+  // Check if the media query is true
+  if (mediaQuery.matches) {
+    shapeTop = "175%";
+    lineLeft = null;
+    shapeWidth = "30%";
+    shapeLeft = "35%";
+  }
+
   let scrollTween = gsap.to(sections, {
     xPercent: -100 * (sections.length - 1),
     ease: "none",
@@ -31,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     width: "28%",
     backgroundImage:
       "linear-gradient(to right bottom, #e93f33, #b42550, #712551, #341f38, #0a0a0a);",
-    left: "43%",
+    left: lineLeft,
     scrollTrigger: {
       trigger: ".line",
       scrub: 2,
@@ -42,9 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.from(".shape", {
     height: "1rem",
-    left: "25%",
-    width: "48vw",
-    top: "183%",
+    left: shapeLeft,
+    width: shapeWidth,
+    top: shapeTop,
     borderRadius: "10px",
     backgroundImage: "#e93f33",
     scrollTrigger: {
@@ -53,18 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
       start: "clamp(top bottom-=12%)",
       end: "+=25%",
     },
-    // onComplete: () => {
-    //   // Re-animate or perform any action after the animation is done
-    //   gsap.to(".shape", {
-    //     height: "1%",
-    //     width: "50px",
-    //     top: "301%",
-    //     scrollTrigger: {
-    //       trigger: ".shape",
-    //       scrub: 2.3,
-    //     },
-    //   });
-    // },
   });
 
   gsap.from(".content__text", {

@@ -114,9 +114,18 @@
     });
 
     // continue button (jump to next field)
+
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+    let continueBtn = "Continue";
+    // Check if the media query is true
+    if (mediaQuery.matches) {
+      continueBtn = null;
+    }
+
     this.ctrlContinue = createElement("button", {
       cName: "fs-continue",
-      inner: "Continue",
+      inner: continueBtn,
       appendTo: this.ctrls,
     });
     this._showCtrl(this.ctrlContinue);

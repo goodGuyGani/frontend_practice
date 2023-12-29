@@ -1528,3 +1528,12 @@ div.cs-skin-boxes:focus > span {
 .cs-skin-boxes li.cs-selected span {
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .success {
+    font-size: 2rem;
+  }
+  .container {
+    padding-top: 30vw;
+  }
+}
