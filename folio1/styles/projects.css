@@ -1,10 +1,12 @@
 .filler {
-  height: 180vw;
+  height: 300%;
+  min-height: 1500px;
 }
 
 .projects {
   width: 100vw;
-  height: 200vw;
+  height: 380%;
+
   background-image: linear-gradient(
     to top,
     #e93f33,
@@ -597,9 +599,7 @@
 
 @media screen and (max-width: 768px) {
   .filler {
-    height: 250vw;
   }
   .projects {
-    height: 330vw;
   }
 }

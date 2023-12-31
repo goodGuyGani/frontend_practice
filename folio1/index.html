@@ -15,28 +15,6 @@
 
     <link rel="stylesheet" href="https://use.typekit.net/qsy7khk.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-      document.documentElement.className = "js";
-      var supportsCssVars = function () {
-        var e,
-          t = document.createElement("style");
-        return (
-          (t.innerHTML = "root: { --tmp-var: bold; }"),
-          document.head.appendChild(t),
-          (e = !!(
-            window.CSS &&
-            window.CSS.supports &&
-            window.CSS.supports("font-weight", "var(--tmp-var)")
-          )),
-          t.parentNode.removeChild(t),
-          e
-        );
-      };
-      supportsCssVars() ||
-        alert(
-          "Please view this demo in a modern browser that supports CSS Variables."
-        );
-    </script>
   </head>
   <body>
     <div class="website-content">
@@ -261,7 +239,7 @@
         <div class="content2">
           <div
             class="title-wrap"
-            style="padding-top: 120vh; padding-bottom: 10%"
+            style="padding-top: 140vh; padding-bottom: 5%"
           >
             <span class="second title title--up">My</span>
             <span class="title title--down">Projects</span>

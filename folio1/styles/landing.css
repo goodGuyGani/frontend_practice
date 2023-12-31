@@ -244,7 +244,7 @@ a:focus-visible {
 .title {
   padding-top: 0.3em;
   line-height: 0.525;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: "stinger-variable", sans-serif;
   font-variation-settings: "wdth" 140, "wght" 150;
   font-weight: 300;
@@ -335,7 +335,7 @@ a:focus-visible {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   /* For mobile phones: */
   .content__text {
     margin-left: 10vw;
