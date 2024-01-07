@@ -1,6 +1,5 @@
 .filler {
-  height: 300%;
-  min-height: 1500px;
+  height: 450%;
 }
 
 .projects {
@@ -611,8 +610,9 @@
   --distance-percent: calc((var(--distance) / var(--char-center)));
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1366px) {
   .filler {
+    height: 300%;
   }
   .projects {
   }
