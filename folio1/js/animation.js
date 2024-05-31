@@ -116,9 +116,10 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.from(".content2", {
     x: "100%",
     scrollTrigger: {
+      markers: true,
       trigger: ".content2",
       scrub: 2,
-      start: "clamp(700 bottom-=12%)",
+      start: "clamp(200 bottom-=12%)",
       end: "+=30%",
     },
   });

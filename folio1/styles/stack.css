@@ -1,6 +1,6 @@
 .cards {
   position: absolute;
-  top: 592%;
+  top: 250%;
 }
 
 .card {
@@ -167,7 +167,7 @@
 
 .gallery-wrap {
   position: absolute;
-  top: 520%;
+  top: 480%;
   width: 100%;
   z-index: 1;
   height: 100vh;
